@@ -1,0 +1,42 @@
+ 1. Create a Git working directory, with the following branches:
+ ● Develop
+ ● F1
+ ● f2
+ 
+ - git branch Develop
+ - git branch F1
+ - git branch f2
+
+ 2. In the master branch, commit main.txt file
+ - git checkout master/main (for github i have main)
+ - touch main.txt (to create a file)
+ - git add main.txt file
+ - git commit -m "Adding main.txt file in main branch"
+ 
+ 3. Put develop.txt in develop branch, f1.txt and f2.txt in f1 and f2 respectively
+ 4. Push all these branches to GitHub
+
+ - git checkout develop
+ - touch develop.txt
+ - git add develop.txt
+ - git commit -m "Adding develop.txt file develop branch" 
+ - git push --set-upstream origin develop
+
+ - git checkout f1
+ - touch f1.txt
+ - git add f1.txt
+ - git commit -m "Adding f1.txt file f1 branch" 	
+ - git push --set-upstream origin f1
+ 
+ - git checkout f2
+ - touch f2.txt
+ - git add f2.txt
+ - git commit -m "Adding f2.txt file f2 branch" 	
+ - git push --set-upstream origin f2
+ 
+ 5. On local delete f2 branch
+ - git checkout main
+ - git branch -d develop
+ 
+ 6. Delete the same branch on GitHub as well
+ - git push origin --delete develop 
