@@ -1,0 +1,52 @@
+ 1. Put master.txt on master branch, stage and commit
+ - git checkout master 
+ - touch master.txt
+ - git add master.txt 
+ - git commit -m "Adding master.txt in master branch"
+ 
+ 2. Create 3 branches: public 1, public 2 and private
+ - git branch  public 1 
+ - git branch  public 2 
+ - git branch  private 
+ 
+ 3. Put public1.txt on public 1 branch, stage and commit
+ - git checkout public1
+ - touch public1.txt
+ - git add public1.txt
+ - git commit -m "Adding public1.txt"
+ - git push --set-upstream origin public1
+ 
+ 4. Merge public 1 on master branch
+ 5. Merge public 2 on master branch
+ git checkout public1
+ touch public1.txt
+ git add and then  commit and push the text file 
+ git checkout main
+ git merge public1
+ git merge public2
+ git push
+ 
+ 6. Edit master.txt on private branch, stage and commit
+ git checkout private 
+ vi master.txt
+ git add master.txt
+ git commit -m "Adding master.txt file in private"
+ git push
+ 
+ 7. Now update branch public 1 and public 2 with new master code in private
+ git checkout public1/public2
+ vi master.txt
+ git add master.txt
+ git commit -m "Adding master.txt file in private"
+ git push
+ 
+ 8. Also update new master code on master
+ 9. Finally update all the code on the private branch 
+ git checkout master/private
+ touch master.txt
+ git add master.txt 
+ git commit -m "Adding master.txt" 
+ git push
+ 
+ 
+ 
