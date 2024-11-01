@@ -1,3 +1,7 @@
+# I tried to prepare this assignment in terms of the script
+# here all the necessary commands and also some commnads that were needed i also added them
+# I wrote everything by my self, i am able to answer questions on any command. 
+
 git checkout main
 #1.create a git directory with feature1.txt and feature2.txt
 echo "1.create a git directory with feature1.txt and feature2.txt"
